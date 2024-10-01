@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container,.container1{
+        background-color: lightslategrey;
+    }
+    /*Descendent*/
+    .container .card{
+        padding:20px;
+        color:white;
+        border:2px solid red;
+    }
+    /*child*/
+    .container1>.card1>.card1{
+        padding:20px;
+        color:white;
+        border:2px solid red;
+    }
+</style>
+<body>
+    <center>
+        <h1>Descendant combinator (space) and child combinator(>)</h1>
+    </center>
+    <hr>
+    <h2>Descendant combinator </h2>
+    <section class="container">
+        <div class="card">
+            <h3>first child</h3>
+            <div class="card">
+                <h3> child card</h3>
+                <div class="card">
+                    <h3>Grand child</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container1">
+        <div class="card1">
+            <h3>first child</h3>
+            <div class="card1">
+                <h3>child card</h3>
+                <div class="card1">
+                    <h3>Grand child</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

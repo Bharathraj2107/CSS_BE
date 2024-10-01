@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .conatiner,.container1{
+        background-color: rebeccapurple;
+        padding:20px;
+    }
+    .card,.card1{
+        background-color:orange;
+        padding:20px;
+    }
+    p{padding:20px;}
+    /*General*/
+    .card ~p{/*selects all the siblings */
+        background-color:black;
+    }
+    .card1 +p +p{/* based on the + we select the sibling*/
+        background-color: orange;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>General sibling(~) all and adjacent sibling(+) first</h1>
+    </center>
+    <hr>
+    <h2>general sibling(~) Example..!</h2>
+    <section class ="container">
+        <div class="card">
+            <h1>Card title</h1>
+            <p>Paragraph inside</p>
+        </div>
+        <p>para -1</p>
+        <p>para -2</p>
+        <p>para -3</p>
+     <div>
+        <p>para -4</p>
+    </div>
+    </section>
+    <hr>
+    <h2>adjacent sibling(+) Example..!</h2>
+    <section class="container1">
+        <div class="card1">
+        <h1>Card Title</h1>
+        <p>Paragraph inside card</p>
+    </div>
+        <p>para -1</p>
+        <p>para -2</p>
+        <p>para -3</p>
+    </section>
+</body>
+</html>

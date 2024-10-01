@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTION</title>
+    <style>
+        button{
+            padding:20px;
+            font-size: 1.5rem;
+            cursor:pointer;
+        }
+        .act{
+            background-color: slateblue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>compound selector</h1>
+    </center>
+    <hr>
+    <div id="blk">
+        <h1>Title-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo sunt dignissimos a eligendi! Qui quasi aperiam pariatur nisi ipsum totam illum non perferendis, voluptatum voluptatem aut dicta sint voluptate.</p>
+        <button>Click me</button>
+    </div>
+    <a href="#"class="act">Link</a>
+    <script>
+        let button=document.querySelector('button');
+        button.addEventListener('click',function(){
+            button.classList.toggle("act");//This line means it will take the css class and it will add if not exists and remove exists
+        });
+    </script>
+</body>
+</html>
