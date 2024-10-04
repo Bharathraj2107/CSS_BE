@@ -11,8 +11,9 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-radius:7px;
     padding:30px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
    
 }
    
@@ -37,6 +38,7 @@ header>div>h1>span{
 #banner>h1{
     color:white;
     font-size: 60px;
+    padding-right:100px;
     padding:20px;
 }
 #banner>h1>span{
@@ -46,6 +48,7 @@ header>div>h1>span{
 }
 #banner>p{
     color:orange;
+    padding-right:22px;
 }
 #sect2{
     display:flex;
@@ -60,7 +63,7 @@ header>div>h1>span{
 #b2{
     text-align:center;
     padding-left:380px;
-    padding-right:580px;
+    padding-right:605px;
 }
 #b3{
    
@@ -86,8 +89,8 @@ header>div>h1>span{
 }
 #middle>h1{
     color:orange;
-    padding:30px;
-    font-size:30px;
+    padding:10px;
+    font-size:60px;
     background-color: white;
 }
 #middle>h1>span{
@@ -107,7 +110,7 @@ header>div>h1>span{
 }
 #b31{
     text-align:left;
-    padding-right:70px;
+    padding-right:50px;
     
 }
 #b32{
@@ -121,8 +124,11 @@ header>div>h1>span{
     /* padding-left:780px; */
     
 }
+#sect3>div>h2{
+    padding:10px;
+}
 footer{
-    background-color: white;
+    color:orange;
 }
 #down>span{
     justify-content: space-around;
@@ -132,4 +138,11 @@ footer{
 }
 #down>span>#pr{
     color: orange;
+}
+#last{
+    background-color: white;
+    padding:40px;
+    border-radius:3px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
 }
