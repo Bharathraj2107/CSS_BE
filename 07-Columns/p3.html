@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <style>
+        p{
+            text-align:justify;
+            margin:20px;
+            columns: 3;
+            column-rule:4px solid red;/*It is similar to border style*/
+            column-gap:50px;
+        }
+        .b1>p{
+            column-fill:auto;
+        }
+        .b2>p{
+            column-fill:balance;/*based on the content it will split*/
+        }
+        .b3>h1{
+            column-span:all;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>column-fill,columns,column-rule</h1>
+    </center>
+    <hr>
+    <section class="container">
+        <div class="b1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum modi et laudantium commodi cupiditate consequuntur, eius explicabo fuga natus quidem vel dolorem eos saepe blanditiis quaerat aperiam minima id.</p>
+        </div>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates suscipit ipsum, odio perferendis cupiditate possimus commodi? Eos assumenda, tempore odit quasi possimus sed rerum obcaecati ut, earum aspernatur animi natus!</p>
+        </div>
+        <div class="b3">
+            <h1>COLUMNS SPAN EXAMPLE  COLUMNS SPAN EXAMPLE  COLUMNS SPAN EXAMPLE </h1>
+            <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur nostrum quidem optio autem esse accusantium minus iure repellat reiciendis, assumenda dignissimos, et quam quos excepturi magnam ducimus non nihil!
+            </i>
+        </div>
+    </section>
+</body>
+</html>

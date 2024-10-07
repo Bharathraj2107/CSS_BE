@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <style>
+        p{
+            background-color: lightblue;
+            padding:20px;
+            text-align:justify;
+        }
+        .container>.b1>p{
+            column-count:6;
+        }
+        .container>.b2>p{
+            column-count:2;
+        }
+        .container>.b3>p{
+            /* column-count:auto; */
+            column-width:200px;/*This is also similar to column count it leaves space of width 200 px between each paragraph*/
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Column-count</h1>
+    </center>
+    <hr>
+    <section class="container">
+        <div class="b1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores incidunt quasi porro amet doloribus culpa nulla aut alias aperiam vero, itaque cupiditate perferendis placeat illum veniam explicabo eos tenetur quod.
+            Nihil eius praesentium nulla dolores doloremque at harum enim maiores sunt, necessitatibus corporis repellat laudantium laborum error fuga deleniti recusandae ipsum expedita, aliquam quas quam! Animi voluptates labore recusandae corrupti.
+            Quisquam voluptate culpa aspernatur in fugit vel velit autem ducimus vero recusandae voluptates ex cumque ullam nostrum consequatur tempora officiis quibusdam dolores eligendi optio debitis eius, numquam aut reiciendis? Nobis!
+            Animi consequatur nihil officia dicta? Optio iure, perferendis sequi est numquam sunt culpa molestias assumenda veritatis dolor reiciendis, mollitia eligendi at dolorem rerum quaerat. Suscipit dolores deleniti illum illo temporibus!
+            Earum non nisi quo quasi explicabo quia, eligendi magnam unde voluptatum sunt. Corporis in, doloremque cumque ea, laborum qui accusantium nostrum consequuntur delectus iure ducimus nemo hic ut animi dicta.</p>
+        </div>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores incidunt quasi porro amet doloribus culpa nulla aut alias aperiam vero, itaque cupiditate perferendis placeat illum veniam explicabo eos tenetur quod.
+                Nihil eius praesentium nulla dolores doloremque at harum enim maiores sunt, necessitatibus corporis repellat laudantium laborum error fuga deleniti recusandae ipsum expedita, aliquam quas quam! Animi voluptates labore recusandae corrupti.
+                Quisquam voluptate culpa aspernatur in fugit vel velit autem ducimus vero recusandae voluptates ex cumque ullam nostrum consequatur tempora officiis quibusdam dolores eligendi optio debitis eius, numquam aut reiciendis? Nobis!
+                Animi consequatur nihil officia dicta? Optio iure, perferendis sequi est numquam sunt culpa molestias assumenda veritatis dolor reiciendis, mollitia eligendi at dolorem rerum quaerat. Suscipit dolores deleniti illum illo temporibus!
+                Earum non nisi quo quasi explicabo quia, eligendi magnam unde voluptatum sunt. Corporis in, doloremque cumque ea, laborum qui accusantium nostrum consequuntur delectus iure ducimus nemo hic ut animi dicta.</p>
+        </div>
+        <div class="b3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores incidunt quasi porro amet doloribus culpa nulla aut alias aperiam vero, itaque cupiditate perferendis placeat illum veniam explicabo eos tenetur quod.
+                Nihil eius praesentium nulla dolores doloremque at harum enim maiores sunt, necessitatibus corporis repellat laudantium laborum error fuga deleniti recusandae ipsum expedita, aliquam quas quam! Animi voluptates labore recusandae corrupti.
+                Quisquam voluptate culpa aspernatur in fugit vel velit autem ducimus vero recusandae voluptates ex cumque ullam nostrum consequatur tempora officiis quibusdam dolores eligendi optio debitis eius, numquam aut reiciendis? Nobis!
+                Animi consequatur nihil officia dicta? Optio iure, perferendis sequi est numquam sunt culpa molestias assumenda veritatis dolor reiciendis, mollitia eligendi at dolorem rerum quaerat. Suscipit dolores deleniti illum illo temporibus!
+                Earum non nisi quo quasi explicabo quia, eligendi magnam unde voluptatum sunt. Corporis in, doloremque cumque ea, laborum qui accusantium nostrum consequuntur delectus iure ducimus nemo hic ut animi dicta.</p>
+        </div>
+    </section>
+</body>
+</html>

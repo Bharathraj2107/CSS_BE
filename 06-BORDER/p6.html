@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        .container>div{
+            padding:20px;
+            margin:20px;
+            border-width:15px;
+            border-style:solid;
+            border-color:orange;
+
+        }
+        .b1{
+            border-image:linear-gradient(orange,deepskyblue) 1;
+        }
+        .b2{
+            border-image:repeating-linear-gradient(30deg,teal,orange,deepskyblue)1;
+        }
+        .b3{
+            border-image:url(https://c8.alamy.com/comp/2FN7XKF/very-beautiful-designs-for-tiles-graphics-and-design-2FN7XKF.jpg) round stretch;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>border  image</h1>
+    </center>
+    <hr>
+    <section class="container">
+        <div class="b1"><!--no tag means it comes under div tag itself -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis quia rerum, unde, nobis sunt velit quas adipisci, qui aspernatur tempora similique sapiente enim ab beatae dolore delectus inventore quis.
+        </div>
+        <div class="b2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis quia rerum, unde, nobis sunt velit quas adipisci, qui aspernatur tempora similique sapiente enim ab beatae dolore delectus inventore quis.
+        </div>
+        <div class="b3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis quia rerum, unde, nobis sunt velit quas adipisci, qui aspernatur tempora similique sapiente enim ab beatae dolore delectus inventore quis.
+        </div>
+    </section>
+</body>
+</html>
