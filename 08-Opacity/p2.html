@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            gap:20px;
+        }
+        .card{
+            padding:20px;
+            background-color: red;
+            color:white;
+            cursor:pointer;
+            transition: 2s;
+        }
+        /* .card:hover{
+            opacity:0.2;
+            filter:blur(3px);
+        } */
+        .container:hover .card{/*when we hover over a container it calls the card class */
+            opacity:0.2;
+            filter:blur(3px);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <h1>filter</h1>
+    </center> 
+    <hr>
+    <div class="container">
+    <div class="card">
+        <h2>Card heading</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis enim nostrum modi ducimus reprehenderit. Voluptas deserunt ipsa provident, exercitationem nulla voluptates ratione error dolore molestias quo temporibus. Eos, iste.</p>
+    </div>
+    <div class="card">
+        <h2>Card heading</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis enim nostrum modi ducimus reprehenderit. Voluptas deserunt ipsa provident, exercitationem nulla voluptates ratione error dolore molestias quo temporibus. Eos, iste.</p>
+    </div>
+    <div class="card">
+        <h2>Card heading</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nobis enim nostrum modi ducimus reprehenderit. Voluptas deserunt ipsa provident, exercitationem nulla voluptates ratione error dolore molestias quo temporibus. Eos, iste.</p>
+    </div>
+</div>
+     
+</body>
+</html>

@@ -61,19 +61,20 @@ header>div>h1>span{
     
 }
 #b2{
-    text-align:center;
+    text-align:left;
     padding-left:380px;
     padding-right:605px;
 }
 #b3{
    
-    text-align:right;
+    text-align:left;
     /* padding-left:780px; */
     
 }
 #sect2>div>h2{
     text-indent:20px;
 }
+
 #sect2>div>p>span{
     color:white;
 }
@@ -114,13 +115,13 @@ header>div>h1>span{
     
 }
 #b32{
-    text-align:center;
+    text-align:left;
     padding-left:380px;
     padding-right:580px;
 }
 #b33{
    
-    text-align:right;
+    text-align:left;
     /* padding-left:780px; */
     
 }

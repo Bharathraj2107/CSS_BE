@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPACITY</title>
+    <style>
+        center{
+            background-color: red;
+            color: white;
+            opacity: 0.7;
+        }
+        .b1{ opacity: 0.1;}
+        .b2{ opacity: 0.2;}
+        .b3{ opacity: 0.3;}
+        .b4{ opacity: 0.4;}
+        .b5{ opacity: 0.5;}
+        .b6{ opacity: 0.6;}
+        .b7{ opacity: 0.7;}
+        .b8{ opacity: 0.8;}
+        .b9{ opacity: 0.9;}
+        .b10{ opacity: 1;}
+
+        .container{
+            display: flex;
+        }
+
+        .container>div{
+            padding: 20px;
+            margin: 20px;
+            background-color: aquamarine;
+            color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container+div{
+            background-color: rgba(0, 128, 128, 0.1);
+            color: #ff0000;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>OPACITY (10 values) Blurness</h1>
+    </center>
+
+    <hr>
+
+    <section class="container">
+        <div class="b1">0.1</div>
+        <div class="b2">0.2</div>
+        <div class="b3">0.3</div>
+        <div class="b4">0.4</div>
+        <div class="b5">0.5</div>
+        <div class="b6">0.6</div>
+        <div class="b7">0.7</div>
+        <div class="b8">0.8</div>
+        <div class="b9">0.9</div>
+        <div class="b10">1.0</div>
+    </section>
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sit dicta ducimus saepe repudiandae perferendis aut voluptatum natus consectetur sapiente eius dolor, beatae quasi laboriosam illum, odit quis. Impedit, nihil.   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quaerat in vitae beatae, cum eaque dolore atque obcaecati quo inventore nihil omnis. Aperiam a delectus qui perspiciatis maxime tempore molestias!
+    </div>
+</body>
+</html>

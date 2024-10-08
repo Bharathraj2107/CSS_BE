@@ -1,0 +1,29 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+.navbar{
+    background-color: grey;
+    /* height:100px;*/
+}
+.navbar>img{
+    height:54px;
+}
+.navbar>ul{
+    list-style-type: none;
+    float:right;
+}
+.navbar>ul>li{
+    display: inline-block;/*based on the block size*/
+    padding: 20px;
+}
+.navbar>ul>li>a{
+    color:#fff;
+    text-decoration: none;
+}
+.navbar>ul>li>:hover{
+    background-color:#fff;
+}
+.navbar>ul>li>:hover a{
+    color:grey;
+}
