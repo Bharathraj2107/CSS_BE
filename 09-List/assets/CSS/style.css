@@ -27,3 +27,39 @@
 .navbar>ul>li>:hover a{
     color:grey;
 }
+/*LIST MAKER*/
+.list-maker-position,.list-icon,.list-shorthand{
+    margin:50px;
+}
+.list-maker-position>ol>li{
+    background-color: teal;
+    padding:20px;
+    margin-bottom: 20px;
+    list-style-position:inside;/*default it is outside*/
+
+}
+.list-maker-position>ol>li>a{
+    color:#fff;
+    text-decoration: none;
+}
+.list-maker-position>ol>li::marker{
+    color:red;
+    font-size: 30px;
+    font-weight:bold;
+
+}
+/*LIST ICON*/
+.list-icon>ul>li{
+    list-style-image: url(../images/placeholder.png);
+}/*here one dot means current folder second dot means outside the folder */
+/*LIST SHORT HAND*/
+.list-shorthand>ul>li{
+    background-color: teal;
+    padding:20px;
+    margin-bottom: 20px;
+
+    /* list-style-type:none
+        list-style-type:inside
+        list-style-image:url(../images/marker.png)*/
+        list-style:decimal inside url(../images/placeholder.png);/*It supports all the 3 property*/
+}
