@@ -6,7 +6,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(95, 168, 170);
+    background-color:steelblue;
     line-height:10px;
     padding: 20px;
     padding-bottom:400px;
@@ -50,4 +50,14 @@ nav>a{
 center>h2{
     padding:50px;
     font-size:35px;
+}
+
+#img{
+    list-style-image: url(../IMAGES/wheel.png);
+    width:16px;/*ask what is happening here */
+
+}
+header>div{
+display:flex;
+line-height: 15px;
 }
