@@ -1,5 +1,5 @@
 table,th,td{
-    border:4px solid blue;
+    border:2px solid blue;
     padding:20px;
     border-collapse: collapse;/*common border for the table*/
 }
@@ -27,4 +27,12 @@ table,th,td{
 .odd-even-table td{
     height:100px;
     vertical-align: middle;/* baseline|sub|super|text-top|text-bottom|middle|top|bottom|*/
+}
+/*TABLE LAYOUT*/
+.layout-table{
+width:10%;
+table-layout: fixed;/*size is fixed but not based on the content but for auto it is based on the content*/
+}
+.layout-table th,.layout-table td{
+    overflow:scroll;
 }

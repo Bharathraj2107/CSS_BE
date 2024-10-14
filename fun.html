@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Blank Message on WhatsApp</title>
+</head>
+<body>
+    <p>
+        To send a blank message in WhatsApp, follow these steps:
+    </p>
+    <ol>
+        <li>Copy the following invisible character: <code>&#8203;</code></li>
+        <li>Paste it into WhatsApp to send a blank message.</li>
+    </ol>
+    <p>
+        The invisible character above is known as a zero-width space (ZWSP). 
+        You can also try clicking the link below to copy a blank message directly:
+    </p>
+    <a href="javascript:void(0);" onclick="copyToClipboard()">Click here to copy a blank message</a>
+
+    <script>
+        function copyToClipboard() {
+            const zwsp = '\u200B'; // This is the zero-width space
+            navigator.clipboard.writeText(zwsp).then(() => {
+                alert('Blank message copied to clipboard! Paste it into WhatsApp.');
+            });
+        }
+    </script>
+</body>
+</html>
