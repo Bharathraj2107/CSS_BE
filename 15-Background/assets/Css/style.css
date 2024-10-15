@@ -1,0 +1,112 @@
+/*universal selector*/
+*{padding:0%;margin:0%;}
+/*Navbar*/
+header{
+    background-color: rgb(51,48,48);
+    box-shadow:3px 3px 3px #ea1a1a;/*To identify i made read
+    3px (first value): Horizontal offset of the shadow. Positive values move the shadow to the right of the element, while negative values move it to the left.
+    3px (second value): Vertical offset of the shadow. Positive values move the shadow down, and negative values move it up.
+    3px (third value): The blur radius, which controls how soft or sharp the shadow appears. Larger values create a more blurred shadow, and if set to 0px, the shadow has sharp edges.*/
+}
+header>nav>ul{
+    list-style-type: none;/*. Applying it to the parent <ul> or <ol> affects all the child <li> elements collectively.*/
+    float:right;/*by default it is left by forcefully we made right The float: right; on the <ul> means the entire list (the <ul> element) will "float" to the right side of its containing block*/
+}
+header>nav>ul>li{
+    display:inline-block;/*based on the content it displays in the single line display:inline will display all the elements on the top in line but if we use block then it comes little center*/
+    padding:20px;
+}
+header>nav>ul>li:hover{background-color:#fff;}
+header>nav>ul>li>a{color:#fff;text-decoration: none;}
+header>nav>ul>li:hover a{color:rgba(51,48,48);}
+header>nav>img{height:54px;}
+
+/*COMMON BANNER*/
+.common-banner{
+    height:80vh;
+    color:#fff;
+    padding:20px;
+}
+.common-banner>h1{
+    text-align: center;
+    font-size:60px;
+    text-shadow: 3px 3px 3px #ddd;
+}
+.common-banner>h1:hover{color:black;}
+/*BANNER-1(p2.HTML)*/
+.banner1{background-color: bisque;}
+/*banner-2 (p3.html)*/
+.banner2,.banner3{
+    background-image: url(../images/banner.jpg);/*banner size smaller than image size image repeats  so we use banner no repeat*/
+    background-repeat:no-repeat; /*no-repeat,repeat,repeat-x,repeat-y when we have logo size small it repeats entire screen so we use this*/
+    background-position: center;/*top left,top center,top right,center left,center,center right
+    bottom left,bottom center,bottom right*/
+    background-size:100%;/* cover-whole screen width,contain-vertical expansion*/
+}
+/*BANNER-3 (p4.html)*/
+.banner3{
+    height:auto;/*based on content it will fix the height*/
+    background-attachment:fixed;/*
+    The background-attachment property specifies whether the background image is fixed or scrolls along with the content.
+    Definition: The height: auto; property sets the height of an element automatically based on its content*/
+}
+/*P5.HTML*/
+.container{
+    background-color: lightgray;
+    padding: 50px;
+    display:flex;
+}
+.container>div{
+    width:300px;
+    height:200px;
+    padding:20px;
+    margin:20px;
+    background-color: gray;
+    border:5px dashed red;
+    color:white;
+
+}
+.container>div>h2{
+    color:red;
+    color:inherit;/*color becomes white because it inherits color from the parent and it is the latest code so it will apply*/
+
+}
+.b1{background-clip:content-box;}
+.b2{background-clip:padding-box;}/* only inside the box*/
+.b3{background-clip:border-box;}/*like entire box see the diff btw padding and border
+The red line lies on the border for border box*/
+.b4{background-clip:text;}
+/*
+background-clip: content-box;
+Behavior: The background is confined to the content area of the element. It doesn't extend into the padding or border areas.
+
+background-clip: padding-box;
+Behavior: The background extends to the inside edge of the border, covering both the content and padding areas, but not the border itself.
+
+background-clip: border-box;
+Behavior: The background extends to the outside edge of the border, covering the entire element, including content, padding, and border
+
+background-clip: text;
+Behavior: The background is clipped to the foreground text, meaning it appears only within the text area.
+
+background-clip defines how far the the background extends
+*/
+/* P6.HTML */
+.c1{
+    /* background-image: url(../images/origin.jpg); */
+    background-image: url(../images/panel1.jpeg);
+    background-repeat: no-repeat;
+    background-origin: content-box;/*where the background image is positioned*/
+}
+.c2{
+    /* background-image: url(../images/origin.jpg); */
+    background-image: url(../images/panel1.jpeg);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+.c3{
+    /* background-image: url(../images/origin.jpg); */
+    background-image: url(../images/panel1.jpeg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
