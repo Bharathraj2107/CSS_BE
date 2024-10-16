@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO_CLASS</title>
+    <style>
+        .title{
+            background-color: rgb(255, 165, 0);
+            border-radius:20px;
+            padding:20px;
+        }
+        .title>h1{
+            text-align: center;
+            color: orangered;
+            padding:20px;
+        }
+        .title>p{
+            text-align:center;
+            color:white;
+        }
+        a:active{
+            color:red;
+    
+        }
+    /* .anc>h1:hover{
+        background-color: lightgrey;
+    }
+    .anc>h1>a{
+        padding:20px;
+    }
+    .link:link{
+        background-color: aquamarine;
+    }
+    .hover:hover{
+        background-color: blue;
+    }
+    .active:active{
+        background-color: brown;
+    }
+    .visited:visited{
+        background-color: crimson;
+    } */
+    </style>
+</head>
+<body>
+    <section class="title">
+        <h1>CSS PSEUDO_CLASSES..!</h1>
+        <p>The CSS pseudo-classes  allow you to style the dynamic states of an element such as hover,active and focus state,as well
+            as elements that are 
+            existing in the document tree but can't be targeted via the use of other selectors without adding any IDs or classes to them,for example,
+            targeting the first or last child elements.</p>
+
+            <p>A pseudo-class starts with a colon (:) . Its syntax can be given with:</p>
+
+            <p><b>selector:pseudo-class {property:value;}</b></p>
+    </section>
+    <section class="anc">
+        <h1>Anchor pseudo-classes..!</h1>
+        <a href="https://be-practical.com/" target="_blank">Be-Practical Tech Solutions..!</a><br>
+        <!-- <a href="https://be-practical.com/" target="_blank" class="hover">Be-Practical Tech Solutions..!</a><br>
+        <a href="https://be-practical.com/" target="_blank" class="active">Be-Practical Tech Solutions..!</a><br>
+        <a href="https://be-practical.com/" target="_blank" class="visited">Be-Practical Tech Solutions..!</a><br> -->
+    </section>
+</body>
+</html>
