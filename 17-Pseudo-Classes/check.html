@@ -1,0 +1,161 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  p:nth-child(1) {
+    color: blue;/*
+    Explanation: :nth-child(1) selects the first child of the parent.
+Why it doesn't apply: The first child inside the div is <p>, but :nth-child(1) doesn't apply here because the selector is looking for a <p> that is the first child.
+Since the first child of the parent (div) is already a <p>, this selector would match. However, in the initial explanation, there might have been a confusion stating that it wouldn’t apply.
+In this case, p:nth-child(1) would apply to the first <p> (Paragraph 1) because it’s indeed the first child of the parent.
+    */
+}
+
+p:nth-child(2) {
+    color: green;/*
+    p:nth-child(2)
+Explanation: :nth-child(2) selects the second child of the parent, regardless of its type.
+Why it doesn't work: The second child in the div is <span>, not a <p>. Since nth-child(2) looks for any element that is the second child and expects it to be a <p>, but finds a <span>, this rule doesn't apply to any <p> elements.
+    */
+}
+
+p:nth-child(3) {
+    color: red;/*
+    p:nth-child(3)
+Explanation: :nth-child(3) selects the third child of the parent.
+Why it works: The third child in the div is a <p> (Paragraph 2). Since the third overall child in the structure is indeed a <p>, p:nth-child(3) applies to Paragraph 2, making it red (according to the CSS).*/
+}
+
+p:nth-child(4) {
+    color: purple;/*
+    p:nth-child(4)
+Explanation: :nth-child(4) selects the fourth child of the parent.
+Why it doesn't apply: The fourth child in the div is a <p> (Paragraph 3). But :nth-child(4) doesn't work here because the selector is looking for a <p> that is specifically the fourth child of the parent. In this case, the <p> (Paragraph 3) is the fourth child, so p:nth-child(4) should apply. But earlier there was an incorrect statement suggesting otherwise.*/
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraph 1</p>  <!-- 1st child -->
+        <!-- <span>Span 1</span> 2nd child -->
+        <!-- <p>Paragraph 2</p>  3rd child -->
+        <!-- <p>Paragraph 3</p>  4th child -->
+        <!-- <span>Span 2</span> 5th child -->
+    <!-- </div> -->
+    
+    
+<!-- </body> -->
+<!-- </html> --> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display:inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+    <form id="registrationForm">
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required pattern="[A-Za-z\s]{3,50}" title="Full name must be 3-50 alphabetic characters">
+        
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="8" title="Password must be at least 8 characters">
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Phone number must be 10 digits">
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+        <!-- Course -->
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" placeholder="Enter the course you're registering for" required>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO-ELEMENT</title>
+    <style>
+        /* h2+p +p::first-line{
+            color:cornflowerblue;
+        }
+
+        h2+p::first-letter{
+            color:crimson;
+            font-size: 50px;
+        } */
+       center+hr+h2+p::first-letter{
+            font-weight: bold;
+            color:crimson;
+            font-size: 100px;
+    
+        }
+        center+hr+h2+p+p::first-line{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 70px;
+
+        }
+  
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Pseudo-elements..!</h1>
+        <p>he CSS pseudo-elements allow you to style the elements or parts of the elements without adding any 1D's or classes to them. br CSS introduced a new double-colon(:) synatx for pseudo-elements to distinguish between them and pseudo-classes</p>
+        <b>Selector:pseudo-element{property:value}</b>
+    </center>
+    <hr>
+    <h2>::first-line::first-letter</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit expedita commodi vitae enim aliquam dolor accusamus, itaque eos eum tenetur quis, et voluptas dolores assumenda repudiandae est numquam. Sed.
+        Fugit temporibus aspernatur deserunt illum? Ex expedita illum velit asperiores sed voluptates sequi consectetur dolorum? Natus doloribus error perspiciatis facilis accusantium. Maxime repudiandae qui suscipit sed dolore laborum perspiciatis corporis.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolorem repellat saepe cumque repudiandae sequi modi alias beatae! Consequatur nisi adipisci eum obcaecati aperiam molestias architecto sunt quasi quis voluptatum.</p>
+
+</body>
+</html>
