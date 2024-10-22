@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSOLUTE POSITION</title>
+    <style>
+        section{
+            background-color: grey;
+            padding: 20px;
+           
+        }
+        section>div{
+            border:2px solid black;
+            color:white;
+            padding:30px;
+            margin: 30px;
+            text-align: center;
+        }
+       
+        .b1{
+           background-color: aquamarine;
+          
+        }
+        .b2{
+            background-color: bisque;
+            left:0%;
+            
+        }
+        .b3{
+            background-color: brown;
+          
+        }
+        .b4{
+            background-color:rgb(224, 20, 200);
+            right:2%;
+          
+        }
+        .b2,.b4{
+            position:absolute;
+            top:0%;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>ABSOLUTE POSITION</h1>
+    </center>
+    <hr>
+    <section class="container">
+        <div class="b1">
+            <p>BOX-1</p>
+        </div>
+        <div class="b2">
+            <p>BOX-2</p>
+        </div>
+        <div class="b3">
+            <p>BOX-3</p>
+        </div>
+        <div class="b4">
+            <p>BOX-4</p>
+        </div>
+    </section>
+</body>
+</html>
