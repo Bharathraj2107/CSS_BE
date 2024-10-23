@@ -9,24 +9,29 @@
     <style>
         .container{
             background-color: grey;
-            padding:40px;
+            padding:20px;
         }
-        div{
+        .container>div{
             border: 2px solid black;
             color:white;
+            margin-bottom:20px;
             padding:20px;
+            text-align: center;
+            position:relative;/*with respect to parent we have to set the child b4,b2 within the parent there will be border created within that we have to adjust*/
         }
         .b2{
             position:absolute;
             background-color: bisque;
-            top:14%;
-            left:4%;
+            top:0px;
+            right:0px;
+        
         }
         .b4{
             position:absolute;
             background-color: rgb(187, 27, 123);
-            top:14%;
-            right:5%;
+            top:0px;
+            left:0px;
+           
         }
       
         .b1{
@@ -37,9 +42,7 @@
             position:relative;
             background-color: brown;
         }
-        .b2.b4{
-            top:0%;
-        }
+     
     </style>
     <center>
         <h1>ABSOLUTE AND RELATIVE POSITION</h1>
