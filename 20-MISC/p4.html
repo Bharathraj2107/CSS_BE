@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISC</title>
+    <style>
+        section{
+            background-color: grey;
+            padding:30px;
+            position:relative;
+            height:400px;
+        }
+        section>div{
+            width:200px;
+            height:200px;
+            margin:10px;
+            border:2px solid red;
+            margin-bottom:20px;
+            position:absolute;
+        }
+        .b1{
+            background-color: aqua;
+            top:50px;
+            left:50px;
+            z-index:1;/*for stack like images we use z-index*/
+        }
+        .b2{
+            background-color:blueviolet;
+            z-index:2;
+            top:100px;
+            left:100px;
+        }
+        .b3{
+            background-color:chartreuse;
+            z-index:3;
+            top:150px;
+            left:150px;
+        }
+        .b4{
+            background-color:crimson;
+            z-index:4;
+            top:200px;
+            left:200px;
+        }
+        :is(.b1,.b2,.b3):hover{
+            z-index:5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Z-INDEX</h1>
+    </center>
+    <hr>
+    <section>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+    </section>
+</body>
+</html>
